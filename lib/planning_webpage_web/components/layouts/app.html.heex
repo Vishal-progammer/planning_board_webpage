@@ -1,0 +1,34 @@
+<header>
+  <div class="flex justify-between drop-shadow ">
+      <div class="ml-4"><img src={~p"/images/av_logo.png"} width="52" /></div>
+      <div class="mt-4 "><span class="font-semibold ">Planning Board</span></div>
+      <div class="m-3 mr-4"><button class="w-14 h-10 bg-zinc-900"><a class="text-white text-sm" href="">LOGIN</a></button></div>
+  </div>
+  <div class="flex justify-around text-center margin bg-white border-b-4">
+    <button class="w-15 bg-orange-400  w-1/3"> <div class = ""> Meetings  </div></button>
+    <button class="w-15 bg-orange-400 w-1/3"> <div class = "m-auto"> To do </div></button>
+    <button class="w-15 bg-orange-400 w-1/3"> <div class = "m-auto"> Notification</div></button>
+    <%!-- <div class = "m-auto"> <button class="w-15 bg-green-600"> To do</button></div>
+    <div class = "m-auto"> <button class="w-15">Notification</button></div> --%>
+  </div>
+</header>
+<main class="px-4 py-20 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-2xl">
+    <.flash_group flash={@flash} />
+    <%= @inner_content %>
+  </div>
+</main>
+<footer class="bg-white footer">
+    <div class="max-w-7xl 2xl:max-w-full mx-auto py-4 px-4 overflow-hidden sm:px-6 lg:px-8">
+      <p class="mt-8 text-center items-center text-base text-gray-400">
+        Made with
+        <span class="text-red-500">
+          <svg xmlns="http://www.w3.org/2000/svg" class="inline h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd">
+            </path>
+          </svg>
+        </span>
+        by tālam.
+      </p>
+    </div>
+  </footer>
